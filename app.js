@@ -17,12 +17,10 @@ function adicionarAmigo() {
 
 function atualizarLista() {
   const lista = document.getElementById("listaAmigos"); // Seleciona o elemento <ul> que exibirá os nomes
-  lista.innerHTML = ""; // Limpa o conteúdo anterior da lista
-
+  lista.innerText = ""; // Limpa o conteúdo anterior da lista
   for (let index = 0; index < amigos.length; index++) {
     const amigo = document.createElement("li");
-
-    amigo.innerHTML = amigos[index];
+    amigo.innerText = amigos[index];
     lista.appendChild(amigo);
   }
 }
@@ -32,16 +30,14 @@ function getRandomInt(maxArray) {
 }
 
 botaoSortear.addEventListener("click", function () {
-  let indiceSorteado = getRandomInt(amigos.length); // Sorteia um índice baseado no tamanho do array
-  let amigoSorteado = amigos[indiceSorteado]; // Pega o nome correspondente ao índice
-  console.log(amigoSorteado); // Exibe o nome sorteado no console
+  const indiceSorteado = getRandomInt(amigos.length); // Sorteia um índice baseado no tamanho do array
+  const amigoSorteado = amigos[indiceSorteado]; // Pega o nome correspondente ao índice
+  if (amigoSorteado === undefined) {
+    alert("Não é possível fazer um sorteio sem nomes!");
+  } else {
+    const resultadoSortear = document.getElementById("Resultado");
+    resultadoSortear.innerText = `O amigo sorteado foi: ${amigoSorteado}`;
+    const lista = document.getElementById("listaAmigos");
+    lista.innerText = "";
+  }
 });
-
-
-// function sortearNome() {
-//     function getRandomInt(maxArray) {
-//       return Math.floor(Math.random() * maxArray);
-//     }
-
-//     console.log(getRandomInt(amigos.length));
-// }
