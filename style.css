@@ -142,7 +142,7 @@ ul {
     text-align: center;
 }
 
-/* Botão de sortear título */
+
 .button-draw {
     display: flex;
     align-items: center;
@@ -160,3 +160,30 @@ ul {
 .button-draw:hover {
     background-color: var(--color-button-hover);
 }
+
+
+.botao-excluir {
+    visibility: hidden;
+    opacity: 0;
+    margin-left: 10px;
+    background-color: #ff5c5c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 2px 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+
+#listaAmigos li:hover .botao-excluir {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.botao-excluir:hover {
+    background-color: #e04343;
+}
+
