@@ -25,11 +25,9 @@ https://github.com/user-attachments/assets/292c811e-3d8d-45f8-948a-b307a02d8837
 
 <h2>Tecnologias utilizadas</h2>
 <ul>
-<li>HTML5</li>
-
-<li>CSS3</li>
-
-<li>JavaScript</li>
+<li><img align="center" alt="html5" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" /></li>
+<li><img align="center" alt="css" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" /></li>
+<li><img align="center" alt="javascript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logocolor=black"></li>
 </ul>
 
 <h2>Melhorias futuras</h2>
